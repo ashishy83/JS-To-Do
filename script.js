@@ -160,7 +160,7 @@ document.querySelector(".add_button").addEventListener("click", () => {
     task_icon1.append(task_plus1); 
 
     var task_delete1 = document.createElement("i"); 
-    task_delete1.classList.add("fas", "fa-trash-alt", "task_delete", unique_id);
+    task_delete1.classList.add("fas", "fa-trash", "task_delete", unique_id);
     task_icon1.append(task_delete1); 
     box_div.append(task_icon1); 
 

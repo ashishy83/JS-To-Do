@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90bc066b2e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="open_model_3" class="model-window" >
+        <p class="back_btn"><i class="fas fa-arrow-circle-left"></i> Back</p>
+        <p class=" "></p>
+        <i class="fas fa-plus-circle new_page_Add_Btn"></i>
+    </div>
+    <div class="container">
+        <header class="index_header" >
+            <div id="left_header">
+                <p>Tasks<span class="index_span1"> Lists</span></p>
+            </div>
+            <div id="right_header"><p><i class="fas fa-plus-circle index_plus"></i> Add New Task</p></div>
+        </header>
+    </div>
+    <p class='no_item'>No Items in the todo list</p>
+     <div id="container_box"></div> 
+     
+    <div id="open-model" class="model-window hidden">
+        <div class="index3_box">
+            <p class="mask_title">ADD NEW TASK</p>
+            <input type="text" class="input_task_Data" placeholder="Add New Task" style="text-align:center;font-size:1.2rem;color:red;">
+           <div>
+           <input type="button" value="ADD" class="add_button">
+           <button class="close_List_btn" onclick="closeBtn()">CLOSE</button>
+        </div>
+
+        </div> 
+    </div>
+    <div id="open-model2" class="model-window hidden2">
+        <div class="index3_box">
+            <p class="mask_title">ADD NEW ITEM</p>
+            <input type="text" class="input_Item_Data" placeholder="Add New Item" style="text-align:center;font-size:1.2rem;color:red;">
+           <div>
+            <input type="button" value="ADD" class="close_Item_List">
+           <button class="close_List_btn" onclick="closeBtn2()">CLOSE</button>
+        </div>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

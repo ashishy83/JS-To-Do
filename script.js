@@ -58,7 +58,7 @@ function closeBtn() {
 
 function closeBtn2() {
   module2.classList.add("hidden2");
-  overlay.classList.add("hidden");
+  // overlay.classList.add("hidden");
   inputItem_Data.value = "";
 }
 

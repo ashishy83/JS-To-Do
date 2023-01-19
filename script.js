@@ -18,7 +18,7 @@ back_btn.addEventListener('click',(argu)=>{
   document.querySelector('.hidden_page_element').classList.remove('hidden_page_element');
 });
 
-var modal = document.querySelector(".hidden");
+var model = document.querySelector(".hidden");
 var overlay = document.querySelector(".overlay");
 var input_data = document.querySelector(".input_task_Data");
 var con_box = document.getElementById("container_box");
@@ -29,7 +29,7 @@ var delete_icon01 = [];
 
 var module2 = document.querySelector(".hidden2");
 var inputItem_Data = document.querySelector(".input_Item_Data");
-var iteam_btn = document.querySelector(".close_Item_List");
+var item_btn = document.querySelector(".close_Item_List");
 var temp_id;
 
 function Obj_Create(unique_id, title) {
@@ -38,7 +38,7 @@ function Obj_Create(unique_id, title) {
   task_obj = {};
 }
 function add_element() {
-  modal.classList.remove("hidden");
+  model.classList.remove("hidden");
   overlay.classList.remove("hidden");
 }
 
@@ -51,21 +51,21 @@ var task_plus1 = document.querySelector('.index_plus');
 task_plus1.addEventListener('click', add_element);
 
 function closeBtn() {
-  modal.classList.add("hidden");
+  model.classList.add("hidden");
   overlay.classList.add("hidden");
   input_data.value = "";
 }
 
 function closeBtn2() {
   module2.classList.add("hidden2");
-  // overlay.classList.add("hidden");
+  overlay.classList.add("hidden");
   inputItem_Data.value = "";
 }
 
 function add_icon2(id) {
   temp_id = id;
   add_element2();
-  iteam_btn.addEventListener('click', function () {
+  item_btn.addEventListener('click', function () {
     if (inputItem_Data.value == "") {
       closeBtn2();
     }
